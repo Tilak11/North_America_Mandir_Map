@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="icon" href="https://www.logolynx.com/images/logolynx/7c/7cf4fed31fdbd15fc49e24d68602f161.jpeg"
+        type="image/x-icon" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .mapboxgl-popup-content {
+            max-width: 440px;
+            max-height: 440px;
+            font: 12px/20px 'Open Sans', sans-serif;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: rgb(239, 243, 200);
+
+        }
+    </style>
+    <title>North America Mandir Map</title>
+</head>
+<div id='map'></div>
+
+<body>
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidGlsYWsxMSIsImEiOiJja3JmYmJ2dzk1dXU3MnVsM2w3b3hhMnN3In0.czyKTkh2nGwJy4ruLI5Cbg';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            zoom: 3,
+            center: [260, 39],
+
+        });
+    </script>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
